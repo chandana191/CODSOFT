@@ -1,53 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>My Portfolio</title>
-  </head>
-  <body>
-    <header>
-      <h1>Chandana Ravula</h1>
-      <p>Web Developer | Full Stack Developer</p>
-    </header>
-
-    <section id="about">
-      <img src="profile.jpg" alt="Chandana Ravula" />
-    </section>
-
-    <section id="about1">
-      <h2>
-        I'm a passionate web developer and designer with a keen eye for detail.
-      </h2>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project">
-        <img src="project1.jpg" alt="Project 1" />
-        <h3>Project 1</h3>
-        <p>Designed and coded a responsive website for a local business.</p>
-      </div>
-      <div class="project">
-        <img src="project2.jpg" alt="Project 2" />
-        <h3>Project 2</h3>
-        <p>
-          Developed a JavaScript-based interactive portfolio showcasing my work.
-        </p>
-      </div>
-    </section>
-    <section id="resume">
-      <h2>Resume</h2>
-      <p><a href="resume.pdf" download> Download Resume (PDF)</a></p>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: chandanaravula5@gmail.com</p>
-      <p>Phone: 9059031314</p>
-    </section>
-    <footer>
-      <p>&copy; 2023 chandana Ravula. All rights reserved.</p>
-    </footer>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <h2>calculator</h2>
+    <div class="container">
+    <fieldset id="container">
+        <form name="calculator">
+            <input id="display" name="display" type="text" readonly>
+            <br>
+            <br>
+            <input class="button" type="button" value="7" onclick="calculator.display.value += '7'">
+            <input class="button" type="button" value="8" onclick="calculator.display.value += '8'">
+            <input class="button" type="button" value="9" onclick="calculator.display.value += '9'">
+            <input class="button mathButtons" type="button" value="+" onclick="calculator.display.value += '+'">
+            <br>
+            <input class="button" type="button" value="4" onclick="calculator.display.value += '4'">
+            <input class="button" type="button" value="5" onclick="calculator.display.value += '5'">
+            <input class="button" type="button" value="6" onclick="calculator.display.value += '6'">
+            <input class="button mathButtons" type="button" value="-" onclick="calculator.display.value += '-'">
+            <br>
+            <input class="button" type="button" value="1" onclick="calculator.display.value += '1'">
+            <input class="button" type="button" value="2" onclick="calculator.display.value += '2'">
+            <input class="button" type="button" value="3" onclick="calculator.display.value += '3'">
+            <input class="button mathButtons" type="button" value="x" onclick="calculator.display.value += '*'">
+            <br>
+            <input class="button clearButton" type="button" value="C" onclick="calculator.display.value = ''">
+            <input class="button" type="button" value="0" onclick="calculator.display.value += '0'">
+            <input class="button mathButtons" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+            <input class="button mathButtons" type="button" value="/" onclick="calculator.display.value += '/'">
+            
+        </form>
+    </fieldset> 
+    </div>
+</body>
 </html>
